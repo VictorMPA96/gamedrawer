@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The next game is...</title>
+    <link rel="shortcut icon" href="favicon.png">
+
+    <style>
+        body{
+            
+            background-image: url(https://64.media.tumblr.com/7eeaced6eb498e8f038731bedd5c62a4/tumblr_oj92i4f9mI1uzwgsuo1_400.gifv);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        td{
+            border: 2px red solid;
+        }
+
+        img{
+            width: 30px;
+        }
+
+        div{
+            margin: 15px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-image: url(https://64.media.tumblr.com/464996816b2797eadbeff0afb054d40f/3d82d495ac8e6fbb-eb/s400x600/6c50b11e3cdd6a33efd6a36000043920305be5e7.gifv);
+            background-size: cover;
+            border: 5px solid rgba(0, 0, 0, 0.5);
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-family: cursive;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 15px;
+            
+            
+            
+        }
+
+        section{
+
+            width: 40%;            
+        }
+
+        button{
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
+
+        nav{
+
+            
+            margin-top: -5%;       
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            display: none;
+            
+            
+            
+        }
+
+        #getWinner{
+
+            margin-top: 20px;
+            background-image: url(https://64.media.tumblr.com/c77f394d74d980d880222da1163ab95d/7bee4573de3da6d5-21/s400x600/6a77683b7063834503b6595ecaa2e38dd7747458.gifv);
+            border-radius: 0%;
+            border: 5px solid black;
+            width: 250px;
+            height: 100px;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+
+        input{
+
+            width: 250px;
+            height: 60px;
+            font-size: 1em;
+            font-weight: bolder;
+            border: 3px solid black;
+            border-radius: 20%;
+            background-color: rgba(255, 255, 0, 0.3);
+            
+        }
+
+        h1{
+
+            text-transform: uppercase;
+            font-size: 3em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            
+        }
+
+        nav div{
+
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 60px;
+            font-size: 2em;
+            background-image: url(https://i.pinimg.com/originals/c3/56/b6/c356b6abeb9ec59d759f1276dfbb5c02.gif);
+            
+            
+            
+        }
+
+        #showWinner{
+
+            flex-direction: column;
+        }
+
+        #winner{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            height: 100px;
+            background-image: url(https://acegif.com/wp-content/gif/confetti-25.gif);
+
+            
+        }
+
+        #overtakings{
+
+            border-radius: 0;
+            border: 1px solid black;
+            background-color: rgba(255, 255, 255, 0.1);
+            background-image: none;
+            margin-top: 70%;
+        }
+
+        
+            
+        
+
+       
+    </style>
+
+
+</head>
+
+<body id="cuerpo">
+
+    
+    <header>
+        <input id="addGame" type="button" value="Add game">
+        <input id="draw" type="button" value="Make a new draw">
+    </header>
+    
+
+    
+    <section id="box"></section>
+
+    <nav id="podium">
+
+        <h1>The winner is between these games:</h1>
+
+        <div id = "0" ></div>
+
+        <div id = "1"></div>
+
+        <div id = "2"></div>
+
+        <button id="getWinner">Press to get a winner!</button>
+    </nav>
+
+    <winner id="showWinner" style="display: none;">
+        <h1>The winner is:</h1>
+        <div id="winner"></div>
+        <div id="overtakings" style="flex-direction: column;"> 
+            <p>The order of overtakings was as follows:</p>
+            
+            <p></p>
+        </div>
+        
+    </winner>
+
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
